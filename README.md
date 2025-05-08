@@ -9,7 +9,7 @@ Method :
 
 2. Then I created the v2 folder as a copy pasted one from the v1 and just moved the exact same `render_widget_list` function to another file `gui.c` (with its `gui.h` header file)
 
-Now the problem is that the two dont render the same, moving the function to a different file adds, for some reason, an additional unprompted outter scrollbar
+Now the problem is that the two do not render the same, moving the function to a different file adds, for some reason, an additional unprompted outer scrollbar
 
 Am I missing something ?
 Please help
