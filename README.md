@@ -1,6 +1,6 @@
 <p align="left">
-  <img src="v1.png" width="400" style="display:inline-block; margin-right:10px;">
-  <img src="v2.png" width="400" style="display:inline-block;">
+  <img src="v1.png" width="300" style="display:inline-block; margin-right:10px;">
+  <img src="v2.png" width="300" style="display:inline-block;">
 </p>
 
 Method : 
