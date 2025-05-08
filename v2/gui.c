@@ -5,11 +5,11 @@
 #include "nuklear.h"
 
 #include <stdio.h>
-#include "widgets.h"
+#include "gui.h"
 
-void render_widget_list2(struct nk_context **ctx, int win_width, int win_height)
+void render_widget_list(struct nk_context **ctx, int win_width, int win_height)
 {
-    if (nk_begin(*ctx, "list2", nk_rect(((float)win_width)/2, 0, ((float)win_width)/2, win_height), NK_WINDOW_BORDER | NK_WINDOW_TITLE))
+    if (nk_begin(*ctx, "list1", nk_rect(0, 0, win_width, win_height), NK_WINDOW_BORDER | NK_WINDOW_TITLE))
     {
         struct nk_rect bounds = nk_window_get_bounds(*ctx);
         struct nk_rect content = nk_window_get_content_region(*ctx);
@@ -19,7 +19,7 @@ void render_widget_list2(struct nk_context **ctx, int win_width, int win_height)
 
         nk_layout_row_dynamic(*ctx, win_height - title_bar_height - padding * 5, 1);
 
-        if (nk_group_begin(*ctx, "list2", 0)) {
+        if (nk_group_begin(*ctx, "list1", 0)) {
             for (int i = 0; i < 100; i++) {
                 nk_layout_row_dynamic(*ctx, 30, 1);
                 char buffer[256];

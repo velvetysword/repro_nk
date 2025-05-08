@@ -20,11 +20,9 @@
 #define MAX_VERTEX_MEMORY 512 * 1024
 #define MAX_ELEMENT_MEMORY 128 * 1024
 
-#include "widgets.h"
-
-void render_widget_list1(struct nk_context **ctx, int win_width, int win_height)
+void render_widget_list(struct nk_context **ctx, int win_width, int win_height)
 {
-    if (nk_begin(*ctx, "list1", nk_rect(0, 0, ((float)win_width)/2, win_height), NK_WINDOW_BORDER | NK_WINDOW_TITLE))
+    if (nk_begin(*ctx, "list1", nk_rect(0, 0, win_width, win_height), NK_WINDOW_BORDER | NK_WINDOW_TITLE))
     {
         struct nk_rect bounds = nk_window_get_bounds(*ctx);
         struct nk_rect content = nk_window_get_content_region(*ctx);
@@ -83,8 +81,7 @@ void render_sdl_ui(SDL_Window **win, struct nk_context **ctx) {
     SDL_GetWindowSize(*win, &win_width, &win_height);
 
     // same 2 functions
-    render_widget_list1(ctx, win_width, win_height);
-    render_widget_list2(ctx, win_width, win_height);
+    render_widget_list(ctx, win_width, win_height);
 
     // render
     glViewport(0, 0, win_width, win_height);
