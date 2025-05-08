@@ -1,6 +1,6 @@
-<img src="v1.png" width="50">
+<img src="v1.png" width="150">
 
-<img src="v2.png" width="50">
+<img src="v2.png" width="150">
 
 Method : 
 
