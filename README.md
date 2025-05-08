@@ -1,6 +1,6 @@
-![issue image v1](v1.png)
+<img src="v1.png" width="50">
 
-![issue image v2](v2.png)
+<img src="v2.png" width="50">
 
 Method : 
 
